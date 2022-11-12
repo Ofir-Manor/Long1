@@ -5,6 +5,8 @@ def visualize_clf(clf, X, Y, title,
                   linewidths=None):
     import matplotlib.pyplot as plt
     from matplotlib.colors import ListedColormap
+    import numpy as np
+    import seaborn as sns
 
     # For internal use here, make sure labels are 0 and 1
     Y = np.ravel(Y).astype(int)
