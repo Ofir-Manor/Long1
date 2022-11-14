@@ -24,7 +24,7 @@ def visualize_clf(clf, X, Y, title,
     # Parameters
     n_classes = 2
     markers = ["D", "o"]
-    palette = sns.color_palette("hls", 2)
+    palette = sns.color_palette("bright")
     custom_cmap = ListedColormap(palette.as_hex())
 
     x_delta = np.abs(X[:, 0].max() - X[:, 0].min()) * 0.1
